@@ -56,11 +56,6 @@ if __name__ == '__main__':
     if re.search("^(\\s*)//", line):
         print("dsgas")
     re_url = re.search("api( *)(\\(*)['\"](com\\.tencent\\S+)['\"]", line)
-    if re_url:
-        print(re_url.group(0))
-        print(re_url.group(1))
-        print(re_url.group(2))
-        print(re_url.group(3))
 
     date_one = 'Mon Aug 17 11:14:49 2020'
     date_one = datetime.strptime(date_one, '%a %b %d %H:%M:%S %Y').__str__()
@@ -72,7 +67,7 @@ if __name__ == '__main__':
     diff = abs(date_one - date_two)
     print(diff / (3600 * 24))
 
-    line = 'Date:   Mon Aug 17 11:14:49 2020 +0800'
+    line = 'Date:   Mon Aug 1++1:14:49 2020 +0800'
     date = re.search('Date:   ([\\s\\S]*) +', line)
     print(date.group(1))
 

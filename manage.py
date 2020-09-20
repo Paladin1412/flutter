@@ -72,9 +72,8 @@ if __name__ == '__main__':
     diff = abs(date_one - date_two)
     print(diff / (3600 * 24))
 
-    line = 'Date:   Mon Aug 17 11:14:49 2020 +0800'
-    date = re.search('Date:   ([\\s\\S]*) +', line)
-    print(date.group(1))
+    line = 'Date   Mon Aug 17 11:14:49 2020 +0800'
+
 
     q = [
         "com.tencent.mobileqq.utils.dialogutils.QQCustomMenuItemPriorityHelper$2.int compare(com.tencent.mobileqq.utils.dialogutils.QQCustomMenuItem,com.tencent.mobileqq.utils.dialogutils.QQCustomMenuItem)(P:77)",
